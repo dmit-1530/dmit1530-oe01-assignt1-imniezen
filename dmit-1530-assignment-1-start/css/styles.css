@@ -1,3 +1,9 @@
+/*
+Garrett Niezen
+DMIT1530 Assignment 1
+February 26th 2025 
+*/
+
 /* Global */
 :root {
     --font-logo: #FFFFFF;
@@ -62,6 +68,134 @@ button {
     font-size: 2.5rem;
 }
 
+.hero p {
+    max-width: 60%;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.feature h3 {
+    font-weight: bold;
+}
+
+.testimonial h2 {
+    max-width: 53%;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 2rem;
+}
+
+.services-box h2:nth-last-of-type(),
+.services-box a {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 2rem;
+}
+
+.services-box p {
+    max-width: 60%;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 2rem;
+}
+
+.service h3 {
+    font-weight: bold;
+}
+
+.service ul {
+    font-size: 0.9rem;
+}
+
+.service li:nth-child(-n+2){
+    padding-bottom: 2rem;
+}
+
+.service span {
+    font-weight: bolder;
+}
+
+.art-row h3 {
+    font-weight: bold;
+    font-size: 1.25rem;    
+}
+
+.highlights {
+    color: var(--font-testimonial);
+}
+
+.highlights span {
+    font-weight: bold;
+}
+
+.highlights-item ul {
+    text-align: left;
+    width: 60%;
+}
+
+.highlights-item li {
+    padding-bottom: 0.7rem;
+    font-size: 0.8rem;
+}
+
+.highlights-item li:last-of-type {
+    padding-bottom: 3rem;
+}
+
+.highlights-item p {
+    width: 60%;
+    font-weight: 200;
+}
+
+footer .logo-text {
+    color: var(--font-logo);
+    line-height: 1;
+    margin: 0;
+}
+
+.footer-logo-container p {
+    font-size: 0.75rem;
+    color: var(--font-nav);
+    margin: 0;
+    text-align: left;
+    width: 50rem;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: end;
+    gap: 2rem;
+}
+
+footer ul {
+    list-style: none;
+    text-align: left;
+    padding-right: 8rem;
+}
+
+footer li {
+    padding-top: 0.5rem;
+}
+
+footer ul li:first-child {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+footer p {
+    font-size: 0.75rem;
+    text-align: center;
+    margin-top: 1rem;
+    max-width: 40%;
+    color: var(--font-nav);
+}
+
 /* Header */
 header {
     background-color: var(--body-nav);
@@ -108,15 +242,6 @@ header {
     text-align: center;
 }
 
-.hero p {
-    max-width: 60%;
-    display: block;
-    text-align: center;
-    margin: 0 auto;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-}
-
 .hero .hero-img {
     max-width: 100%;
     height: auto;
@@ -142,24 +267,12 @@ header {
     text-align: left;
 }
 
-.feature h3 {
-    font-weight: bold;
-}
-
 /* Testimonial */
 .testimonial {
     background-color: var(--body-testimonial);
     color: var(--font-testimonial);
     padding: 4rem 5vw;
     text-align: center;
-}
-
-.testimonial h2 {
-    max-width: 53%;
-    display: block;
-    text-align: center;
-    margin: 0 auto;
-    padding-bottom: 2rem;
 }
 
 /* Services */
@@ -183,38 +296,6 @@ header {
     min-width: 280px;
     max-width: 28%;
     text-align: left;
-}
-
-.services-box h2:nth-last-of-type(),
-.services-box a {
-    display: block;
-    text-align: center;
-    margin: 0 auto;
-    padding-top: 2rem;
-}
-
-.services-box p {
-    max-width: 60%;
-    display: block;
-    text-align: center;
-    margin: 0 auto;
-    padding-top: 2rem;
-}
-
-.service ul {
-    font-size: 0.9rem;
-}
-
-.service li:nth-child(-n+2){
-    padding-bottom: 2rem;
-}
-
-.service h3 {
-    font-weight: bold;
-}
-
-.service span {
-    font-weight: bolder;
 }
 
 /* Service Images */
@@ -246,6 +327,69 @@ header {
     border-radius: 10px;
 }
 
+/* Art Container */
+.art-hero {
+    background-color: var(--body-hero);
+    padding: 5rem 5vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.art-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.art-row {
+    display: flex;
+    height: 20rem;
+}
+
+.art-text {
+    padding: 2rem;
+    width: 35rem;
+    text-align: left;
+}
+
+/*Highlights*/
+.highlights {
+    background-color: var(--body-subscribe);
+    display: flex;
+    justify-content: center;
+}
+
+.highlights-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.highlights-item {
+    flex-direction: column;
+}
+
+.highlights-item:first-of-type img{
+    width: 30rem;
+    height: 50rem;
+    object-fit:cover;
+    border-radius: 1rem;
+}
+
+.highlights-item:last-of-type {
+    height: 55rem;
+    text-align: left;
+    width: 60rem;
+    padding-left: 1rem;
+}
+
+.highlights-item:last-of-type img {
+    height: 22rem;
+}
+
 /* Footer */
 footer {
     background-color: var(--body-nav);
@@ -273,20 +417,6 @@ footer {
     gap: 1rem;
 }
 
-footer .logo-text {
-    color: var(--font-logo);
-    line-height: 1;
-    margin: 0;
-}
-
-.footer-logo-container p {
-    font-size: 0.75rem;
-    color: var(--font-nav);
-    margin: 0;
-    text-align: left;
-    width: 50rem;
-}
-
 .logo-text-container {
     display: flex;
     align-items: center;
@@ -297,35 +427,6 @@ footer .logo-text {
     width: 7.7rem;
     height: 4.9rem;
     vertical-align: middle;
-}
-
-.footer-links {
-    display: flex;
-    justify-content: end;
-    gap: 2rem;
-}
-
-footer ul {
-    list-style: none;
-    text-align: left;
-    padding-right: 8rem;
-}
-
-footer li {
-    padding-top: 0.5rem;
-}
-
-footer ul li:first-child {
-    font-weight: bold;
-    font-size: 1rem;
-}
-
-footer p {
-    font-size: 0.75rem;
-    text-align: center;
-    margin-top: 1rem;
-    max-width: 40%;
-    color: var(--font-nav);
 }
 
 /* Tablet (720px to 900px) */
